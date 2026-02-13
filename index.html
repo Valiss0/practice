@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Аналіз типових загроз у локальних мережах навчального закладу</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Огляд основних кіберзагроз для локальних мереж навчального закладу та базові підходи до їхнього зменшення." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="img/png" href="./img/icons8-favicon-50.png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+  <div class="container hero">
+    <div class="tag">Навчальний проєкт · Кібербезпека</div>
+    <h1>Аналіз типових загроз у локальних мережах навчального закладу</h1>
+    <p class="subtitle">
+      Короткий огляд основних кіберзагроз для локальної мережі школи чи університету та базових підходів до їхнього зменшення.
+    </p>
+    <p class="meta">
+      Тема курсової / лабораторної роботи з комп'ютерних мереж та інформаційної безпеки
+    </p>
+    <button id="fortuneButton" class="fortune-button">
+      Погадати на дипломну роботу
+    </button>
+    <div id="fortuneResult" class="fortune-result">
+  <div class="fortune-card-image-wrapper">
+    <img src="./таро/шут.jpg" alt="Карта" class="fortune-card-image"/>
+  </div>
+  <div class="fortune-card-content">
+    <div class="fortune-card-title typewriter-title"></div>
+      <p class="fortune-card-text typewriter-text"></p>
+      <p class="fortune-start-text">
+        Карти Таро - це колода з 78 карт із символічними зображеннями, що з'явилася в Європі в XV столітті. Спочатку використовувалися для ігор, але з кінця XVIII століття застосовуються для ворожіння, самопізнання, аналізу ситуацій та психологічних практик. Колода складається з 22 Старших Арканів (архетипи) та 56 Молодших Арканів (чотири масті).
+      </p>
+    </div>
+  </div>
+    <div class="fortune-card-content">
+      <div class="fortune-card-title typewriter-title"></div>
+      <p class="fortune-card-text typewriter-text"></p>
+    </div>
+  </div>
+  </div>
+</header>
+  <main>
+    <div class="container">
+      <section>
+        <h2>Мета та завдання</h2>
+          <p>
+            Мета роботи — виконати систематизований аналіз типових загроз для локальної мережі навчального закладу та запропонувати базові заходи захисту.
+          </p>
+          <p>
+            В межах проєкту розглядаються технічні, організаційні та людські фактори, що впливають на безпеку мережевої інфраструктури.
+          </p>
+        <div class="pill-list">
+          <a href="https://itedu.center/ua/blog/articles/lan_wan_man/?srsltid=AfmBOopqa8OuVXlHf4v7QL-idmwlcX7CGBXYyVdT38vfOgfaGZBM2WIJ" target="_blank" rel="noopener">
+            <span class="pill">Локальна мережа</span>
+          </a>
+          <a href="https://uk.wikipedia.org/wiki/%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0" target="_blank" rel="noopener">
+            <span class="pill">Школа / університет</span>
+          </a>
+          <a href="https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0_%D0%B7%D0%B0%D0%B3%D1%80%D0%BE%D0%B7%D0%B0" target="_blank" rel="noopener">
+            <span class="pill">Кіберзагрози</span>
+          </a>
+          <a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D1%85%D0%B8%D1%81%D1%82_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97" target="_blank" rel="noopener">
+            <span class="pill">Захист даних</span>
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>Основні типи загроз</h2>
+        <div class="carousel">
+          <button class="carousel-btn prev" aria-label="Попередня картка">&#10094;</button>
+          <div class="carousel-track">
+            <article class="card threat-card active">
+              <div class="badge">Людський фактор</div>
+              <div class="threat-title">Фішинг та соціальна інженерія</div>
+              <p>
+                Зловмисники надсилають листи або повідомлення, що імітують офіційні повідомлення адміністрації чи сервісів, щоб викрасти облікові дані студентів і викладачів.
+              </p>
+              <ul>
+                <li>Підроблені листи від «деканату» або «електронного журналу».</li>
+                <li>Посилання на фальшиві сторінки входу до облікового запису.</li>
+              </ul>
+            </article>
+            <article class="card threat-card">
+              <div class="badge">Шкідливе ПЗ</div>
+              <div class="threat-title">Малваре та програм-здирники</div>
+              <p>
+                Віруси, трояни та програм-здирники можуть потрапляти до мережі через вкладення у пошті, флеш-носії або завантаження неліцензійного ПЗ.
+              </p>
+              <ul>
+                <li>Шифрування файлів на навчальних серверах.</li>
+                <li>Порушення роботи електронних щоденників та LMS.</li>
+              </ul>
+            </article>
+            <article class="card threat-card">
+              <div class="badge">Мережева інфраструктура</div>
+              <div class="threat-title">DDoS-атаки та перевантаження</div>
+              <p>
+                Масовані запити до веб-сервісів навчального закладу здатні тимчасово заблокувати доступ до електронних курсів, систем тестування та сайту.
+              </p>
+              <ul>
+                <li>Недоступність ресурсів під час сесії чи іспитів.</li>
+                <li>Збої в роботі VPN та віддаленого навчання.</li>
+              </ul>
+            </article>
+            <article class="card threat-card">
+              <div class="badge">Доступ до даних</div>
+              <div class="threat-title">Несанкціонований доступ та витік інформації</div>
+              <p>
+                Недоліки у розмежуванні прав доступу й слабкі паролі підвищують ризик крадіжки персональних даних студентів та співробітників.
+              </p>
+              <ul>
+                <li>Перегляд або зміна оцінок у журналах.</li>
+                <li>Витік персональних даних через зламані облікові записи.</li>
+              </ul>
+            </article>
+          </div>
+          <button class="carousel-btn next" aria-label="Наступна картка">&#10095;</button>
+        </div>
+        <div class="carousel-dots">
+          <button class="dot active" aria-label="1 картка"></button>
+          <button class="dot" aria-label="2 картка"></button>
+          <button class="dot" aria-label="3 картка"></button>
+          <button class="dot" aria-label="4 картка"></button>
+        </div>
+      </section>
+      <section>
+        <h2>Причини вразливості навчальних мереж</h2>
+        <div class="grid grid-2 causes-grid">
+          <div class="card">
+            <div class="threat-title">Технічні фактори</div>
+            <ul>
+              <li>Застаріле мережеве обладнання та сервери без оновлень безпеки.</li>
+              <li>Відсутність сегментації мережі (єдина мережа для адміністраторів і студентів).</li>
+              <li>Недостатній контроль над особистими пристроями (BYOD) у кампусі.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="threat-title">Організаційні та людські фактори</div>
+            <ul>
+              <li>Низький рівень обізнаності студентів та персоналу щодо кібергігієни.</li>
+              <li>Відсутні або формальні політики щодо використання мережевих ресурсів.</li>
+              <li>Обмежений бюджет на засоби захисту та навчання ІТ-персоналу.</li>
+            </ul>
+          </div>
+        </div>
+        <h2>Базові заходи захисту</h2>
+              <div class="grid grid-2 causes-grid"">
+                <div class="card">
+                  <div class="threat-title">Технічні заходи</div>
+                  <ul>
+                    <li>Використання сучасних міжмережевих екранів та фільтрації трафіку.</li>
+                    <li>Сегментація мережі: окремі VLAN для адміністрації, викладачів, студентів та гостьового доступу.</li>
+                    <li>Регулярне оновлення операційних систем, ПЗ та мережевого обладнання.</li>
+                    <li>Резервне копіювання критичних даних на окремі носії/сервери.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <div class="threat-title">Організаційні заходи</div>
+                  <ul>
+                    <li>Розробка політик безпечного використання мережі та облікових записів.</li>
+                    <li>Навчання студентів та персоналу розпізнаванню фішингу та шкідливих вкладень.</li>
+                    <li>Використання багатофакторної автентифікації для критичних сервісів.</li>
+                    <li>Регулярні аудити безпеки та тестування на проникнення.</li>
+                  </ul>
+                </div>
+              </div>
+       </section>
+      <section id="section-conclusion" class="conclusion-section">
+        <h2>Висновки</h2>
+        <div class="conclusion-box">
+          <p>
+            Локальні мережі навчальних закладів є привабливою ціллю для зловмисників через поєднання великої кількості користувачів, цінних даних та обмежених ресурсів на кіберзахист.
+          </p>
+          <p>
+            Поєднання технічних, організаційних та освітніх заходів дозволяє суттєво знизити ризики інцидентів безпеки та забезпечити безперервність освітнього процесу.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+      <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-block">
+        <h3>Про проєкт</h3>
+        <p>
+          Навчальний лендинг з теми аналізу типових загроз у локальних мережах навчального закладу.
+        </p>
+      </div>
+      <div class="footer-block">
+        <h3>Кібергігієна</h3>
+        <ul>
+          <li>Не відкривати підозрілі листи та вкладення.</li>
+          <li>Використовувати складні паролі та MFA.</li>
+          <li>Підключатися лише до перевірених Wi‑Fi мереж.</li>
+        </ul>
+      </div>
+      <div class="footer-block">
+        <h3>Інфраструктура мережі</h3>
+        <ul>
+          <li>Сегментація мережі навчального закладу.</li>
+          <li>Регулярні оновлення та резервні копії.</li>
+          <li>Моніторинг інцидентів безпеки.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Локальні мережі навчальних закладів</span>
+      <span>Демонстраційний навчальний проєкт</span>
+    </div>
+  </footer>
+  <button id="backToTop" class="back-to-top" aria-label="Повернутися нагору">↑</button>
+  <script src="./script.js"></script>
+</body>
+</html>
